@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <h2>Today</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <h2>Today</h2>
     <!-- container for Moment.js output -->
-      <p id="currentDay" class="lead"></p>
-    </header>
+    <p id="currentDay" class="lead"></p>
+  </header>
 
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <div class="row">
-      <div class="9houricon btn btn-warning col-2">9hour</div>
-        <div class="9hourtext btn btn-secondary col-8">text</div>
-        <div class="9hoursavebtn btn btn-primary col-2"></div>
-      </div>
-
-
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="hour9icon btn btn-warning col-2">9 AM</div>
+      <div class="hour9text btn btn-secondary col-8">text</div>
+      <div class="hour9savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
     </div>
-    
+    <div class="row">
+      <div class="hour10icon btn btn-warning col-2">10 AM</div>
+      <div class="hour10text btn btn-secondary col-8">text</div>
+      <div class="hour10savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour11icon btn btn-warning col-2">11 AM</div>
+      <div class="hour11text btn btn-secondary col-8">text</div>
+      <div class="hour11savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour12icon btn btn-warning col-2">12 PM</div>
+      <div class="hour12text btn btn-secondary col-8">text</div>
+      <div class="hour12savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour1icon btn btn-warning col-2">1 PM</div>
+      <div class="hour1text btn btn-secondary col-8">text</div>
+      <div class="hour1savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour2icon btn btn-warning col-2">2 PM</div>
+      <div class="hour2text btn btn-secondary col-8">text</div>
+      <div class="hour2savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour3icon btn btn-warning col-2">3 PM</div>
+      <div class="hour3text btn btn-secondary col-8">text</div>
+      <div class="hour3savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour4icon btn btn-warning col-2">4 PM</div>
+      <div class="hour4text btn btn-secondary col-8">text</div>
+      <div class="hour4savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+    <div class="row">
+      <div class="hour5icon btn btn-warning col-2">5 PM</div>
+      <div class="hour5text btn btn-secondary col-8">text</div>
+      <div class="hour5savebtn btn btn-primary col-2"><i class="far fa-save"></i></div>
+    </div>
+  </div>
 
-    <script src="javascript.js"></script>
-    <script src="moment.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+
+  <script src="javascript.js"></script>
+  <script src="moment.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
 </html>
