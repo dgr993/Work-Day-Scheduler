@@ -38,7 +38,7 @@ moment().format('MMMM Do YYYY, h:mm:ss a');
       var hour5text = document.querySelector(".hour5text")
       var hour5text = 17;
       //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
+      if (hour9text < currentHour) {
         document.querySelector(".hour9text").style.background = "lightyellow"
         console.log(hour9text)
         console.log(currentHour)
@@ -50,113 +50,102 @@ moment().format('MMMM Do YYYY, h:mm:ss a');
         document.querySelector(".hour9text").style.background = "lightgray"
       }
       //change color of text area for past present and future for 10AM
-      if (hour10text <= currentHour) {
+      if (hour10text < currentHour) {
         document.querySelector(".hour10text").style.background = "lightyellow"
         console.log(hour10text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour10text === currentHour) {
+        document.querySelector(".hour10text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour10text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 11AM
+      if (hour11text < currentHour) {
+        document.querySelector(".hour11text").style.background = "lightyellow"
+        console.log(hour11text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour11text === currentHour) {
+        document.querySelector(".hour11text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour11text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 12PM
+      if (hour12text < currentHour) {
+        document.querySelector(".hour12text").style.background = "lightyellow"
+        console.log(hour12text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour12text === currentHour) {
+        document.querySelector(".hour12text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour12text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 1PM
+      if (hour1text <= currentHour) {
+        document.querySelector(".hour1text").style.background = "lightyellow"
+        console.log(hour1text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour1text === currentHour) {
+        document.querySelector(".hour1text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour1text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 2PM
+      if (hour2text < currentHour) {
+        document.querySelector(".hour2text").style.background = "lightyellow"
+        console.log(hour2text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour2text === currentHour) {
+        document.querySelector(".hour2text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour2text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 3PM
+      if (hour3text < currentHour) {
+        document.querySelector(".hour3text").style.background = "lightyellow"
+        console.log(hour3text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour3text === currentHour) {
+        document.querySelector(".hour3text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour3text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 4PM
+      if (hour4text < currentHour) {
+        document.querySelector(".hour4text").style.background = "lightyellow"
+        console.log(hour4text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour4text === currentHour) {
+        document.querySelector(".hour4text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour4text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
+      //change color of text area for past present and future for 5PM
+      if (hour5text < currentHour) {
+        document.querySelector(".hour5text").style.background = "lightyellow"
+        console.log(hour5text)
         console.log(currentHour)
       }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
+      else if (hour5text === currentHour) {
+        document.querySelector(".hour5text").style.background = "lightblue"
       }
       else {
-        document.querySelector(".hour9text").style.background = "lightgray"
+        document.querySelector(".hour5text").style.background = "lightgray"
       }
-      //change color of text area for past present and future for 9AM
-      if (hour9text <= currentHour) {
-        document.querySelector(".hour9text").style.background = "lightyellow"
-        console.log(hour9text)
-        console.log(currentHour)
-      }
-      else if (hour9text === currentHour) {
-        document.querySelector(".hour9text").style.background = "lightblue"
-      }
-      else {
-        document.querySelector(".hour9text").style.background = "lightgray"
-      }
+      
 
 
 // var NowDate = new Date();
