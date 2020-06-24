@@ -1,7 +1,7 @@
 var todaytext = document.querySelector("h2");
 
 moment().format('MMMM Do YYYY, h:mm:ss a');
-
+refresh();
 
 (function () {
   // instantiate a moment object
@@ -146,6 +146,75 @@ moment().format('MMMM Do YYYY, h:mm:ss a');
         document.querySelector(".hour5text").style.background = "lightgray"
       }
       
+      //put text input into local storage
+       $(".hour9savebtn").on("click", function(){
+          var hour = $(".hour9text").val()
+          localStorage.setItem("hour9text",hour)
+        });
+        $(".hour10savebtn").on("click", function(){
+          var hour = $(".hour10text").val()
+          localStorage.setItem("hour10text",hour)
+        });
+        $(".hour11savebtn").on("click", function(){
+          var hour = $(".hour11text").val()
+          localStorage.setItem("hour11text",hour)
+        });
+        $(".hour12savebtn").on("click", function(){
+          var hour = $(".hour12text").val()
+          localStorage.setItem("hour12text",hour)
+        });
+        $(".hour1savebtn").on("click", function(){
+          var hour = $(".hour1text").val()
+          localStorage.setItem("hour1text",hour)
+        });
+        $(".hour2savebtn").on("click", function(){
+          var hour = $(".hour2text").val()
+          localStorage.setItem("hour2text",hour)
+        });
+        $(".hour3savebtn").on("click", function(){
+          var hour = $(".hour3text").val()
+          localStorage.setItem("hour3text",hour)
+        });
+        $(".hour4savebtn").on("click", function(){
+          var hour = $(".hour4text").val()
+          localStorage.setItem("hour4text",hour)
+        });
+        $(".hour5savebtn").on("click", function(){
+          var hour = $(".hour5text").val()
+          localStorage.setItem("hour5text",hour)
+        });
+
+      //bring info from local storage to box so that refreshing doesn't delete data
+        function refresh(){
+          var info = localStorage.getItem("hour9text")
+          $(".hour9text").text(info)
+
+          var info = localStorage.getItem("hour10text")
+          $(".hour10text").text(info)
+        
+          var info = localStorage.getItem("hour11text")
+          $(".hour11text").text(info)
+        
+          var info = localStorage.getItem("hour12text")
+          $(".hour12text").text(info)
+      
+          var info = localStorage.getItem("hour1text")
+          $(".hour1text").text(info)
+        
+          var info = localStorage.getItem("hour2text")
+          $(".hour2text").text(info)
+        
+          var info = localStorage.getItem("hour3text")
+          $(".hour3text").text(info)
+        
+          var info = localStorage.getItem("hour4text")
+          $(".hour4text").text(info)
+        
+          var info = localStorage.getItem("hour5text")
+          $(".hour5text").text(info)
+        }
+
+
 
 
 // var NowDate = new Date();
